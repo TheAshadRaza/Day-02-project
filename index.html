@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <nav class="nav">
+                <div class="logo">
+                    <img src="./250_150 (1).png" alt="detcfly for maketing">
+                </div>
+                <div class="nav-link">
+                    <ul>
+                        <li class="active"><a href="./index.html"> Home </li>
+                        <li><a href="./contact.html"> Contact</li>
+                        <li><a href="./about.html"> About Us</li>
+                        <li><a href="./blog.html">Blog</li>
+                    </ul>
+                </div>
+                <div class="menu-icon">
+                    <img src="./—Pngtree—menu icon_4419509.png" alt="">
+                </div>
+            </nav>
+        </div>
+        <div class="content">
+            <div class="social-icons">
+                <img src="./—Pngtree—facebook social media icon_4235822.png" alt="">
+                <img src="./—Pngtree—instagram icon instagram logo_3584852.png" alt="">
+                <img src="./—Pngtree—twitter social media icon design_3654763.png" alt="">
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="search">
+                <img src="./icons8-search-30.png">
+            </div>
+        </div>
+        <img src="./—Pngtree—realistic clouds set_5895124.png" id="cloud" alt="">
+        <img src="./—Pngtree—hand made aeroplane vector_5441026.png" id="plane" alt="">
+        <div id="airballoon">
+            <img src="./air_balloon_PNG101137.png" class="ballon1">
+            <img src="./air_balloon_PNG101137.png" class="ballon2">
+            <img src="./air_balloon_PNG101137.png" class="ballon3">
+        </div>
+        <img src="./icons8-pause-30.png" id="myImg" alt="">
+    </div>
+    <script>
+        var myImg = document.getElementById("myImg");
+        myImg.onclick = function () {
+            if (cloud.style.webkitAnimationPlayState == "paused") 
+            {
+                cloud.style.webkitAnimationPlayState = "running";
+
+                plane.style.webkitAnimationPlayState = "running";
+
+                airballoon.style.webkitAnimationPlayState = "running";
+
+                myImg.src = 'images/paused.png';
+            } else {
+                cloud.style.webkitAnimationPlayState = "paused";
+
+                plane.style.webkitAnimationPlayState = "paused";
+
+                airballon.style.webkitAnimationPlayState = "paused";
+
+                myImg.src = 'images/play.png';
+
+            }
+        }                    
+    </script>
+</body>
+
+</html>
