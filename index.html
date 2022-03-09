@@ -5,74 +5,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day-2</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>The firaki</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="main">
-        <div class="navbar">
-            <nav class="nav">
-                <div class="logo">
-                    <img src="./250_150 (1).png" alt="detcfly for maketing">
-                </div>
-                <div class="nav-link">
-                    <ul>
-                        <li class="active"><a href="./index.html"> Home </li>
-                        <li><a href="./contact.html"> Contact</li>
-                        <li><a href="./about.html"> About Us</li>
-                        <li><a href="./blog.html">Blog</li>
-                    </ul>
-                </div>
-                <div class="menu-icon">
-                    <img src="./—Pngtree—menu icon_4419509.png" alt="">
-                </div>
-            </nav>
-        </div>
-        <div class="content">
-            <div class="social-icons">
-                <img src="./—Pngtree—facebook social media icon_4235822.png" alt="">
-                <img src="./—Pngtree—instagram icon instagram logo_3584852.png" alt="">
-                <img src="./—Pngtree—twitter social media icon design_3654763.png" alt="">
-            </div>
-            <div class="search-box">
-                <input type="text" placeholder="search">
-                <img src="./icons8-search-30.png">
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">ADVENTURE</h1>
+            <ul class="nav-links">
+                <li class="active"><a href="#"></a>Home</li>
+                <li><a href="#"></a>Tourist</li>
+                <li><a href="#"></a>About Us</li>
+                <li><a href="#"></a>Explore</li>
+                <li class="ctn"><a href="#"></a>Contact</li>
+
+            </ul>
+            <img src="./img/icons8-menu-48.png" alt="" class="menu-button">
+        </nav>
+        <div class="header-content">
+            <h2>Explore the colourful World</h2>
+            <div class="line">
+                <h1>A Wonderful GIFT</h1>
+                <a href="#" class="ctn">Learn More</a>
             </div>
         </div>
-        <img src="./—Pngtree—realistic clouds set_5895124.png" id="cloud" alt="">
-        <img src="./—Pngtree—hand made aeroplane vector_5441026.png" id="plane" alt="">
-        <div id="airballoon">
-            <img src="./air_balloon_PNG101137.png" class="ballon1">
-            <img src="./air_balloon_PNG101137.png" class="ballon2">
-            <img src="./air_balloon_PNG101137.png" class="ballon3">
+    </header>
+    <!-- event section -->
+    <section class="event">
+        <div class="tittle">
+            <h1>Upcomining Event</h1>
+            <div class="line"></div>
         </div>
-        <img src="./icons8-pause-30.png" id="myImg" alt="">
-    </div>
+        <div class="row">
+            <div class="col">
+                <img src="./img/adventure-g58bad5180_1920.jpg" alt="">
+                <h4>Everest Camp Trek </h4>
+                <p>Wanna feel like adventure we are stand for you book your plan.</p>
+                <a class="ctn" href="#">Learn More</a>
+            </div>
+
+            <div class="col">
+                <img src="./img/bora-bora-g246413b00_1920.jpg" alt="">
+                <h4>Beach Camp Tour </h4>
+                <p>Wanna feel like Alone carribben we are stand for you book your beach.</p>
+                <a class="ctn" href="#">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <section class="explore">
+        <div class="explore-content">
+            <h1>Explore The World </h1>
+            <div class="line"></div>
+            <p>To explore the world many sector exist there, explore with A D V A N T U R E .</p>
+            <a href="#" class="ctn">Learn More</a>
+
+
+        </div>
+
+
+    </section>
+    <section class="tour">
+        <div class="row">
+            <div class="col-content">
+                <h1>
+                    Upcomining TOUR & DESIGINATION
+                </h1>
+                <div class="line"></div>
+                <p>we have many type of tour that travel you around the world.some thailand tour and some newzeland tour
+                    u should need to be a part of adveanture.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col-image">
+                <div class="image-gallery">
+                    <img src="./img/house-g4e2416205_1920.jpg" alt="">
+                    <img src="./img/alone tree.jpg" alt="">
+                    <img src="./img/travelcar.jpg" alt="">
+                    <img src="./img/mountain fall.jpg" alt="">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="footer">
+
+    <p>Gurgaon, Haryana , INDIA | dtecfly@gamil.com</p>
+    <p>All right reserved ©  ADVENTURE 2022</p>
+</section>
+
+
+
+
+
+
+
+
+
+
     <script>
-        var myImg = document.getElementById("myImg");
-        myImg.onclick = function () {
-            if (cloud.style.webkitAnimationPlayState == "paused") 
-            {
-                cloud.style.webkitAnimationPlayState = "running";
-
-                plane.style.webkitAnimationPlayState = "running";
-
-                airballoon.style.webkitAnimationPlayState = "running";
-
-                myImg.src = 'images/paused.png';
-            } else {
-                cloud.style.webkitAnimationPlayState = "paused";
-
-                plane.style.webkitAnimationPlayState = "paused";
-
-                airballon.style.webkitAnimationPlayState = "paused";
-
-                myImg.src = 'images/play.png';
-
-            }
-        }                    
+        const menuBtn = document.querySelector('.menu-button');
+        const navLinks = document.querySelector('.nav-links');
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu');
+        })
     </script>
 </body>
 
